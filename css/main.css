@@ -1,6 +1,19 @@
 @charset "UTF-8";
 /* CUSTOM STYLES GO HERE */
 /* universal styles */
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+@import url('https://fonts.googleapis.com/css?family=VT323');
+#container{
+  font-family: 'Titillium Web', sans-serif;
+}
+h2,h3,h4{
+  font-family: 'VT323', monospace;
+  font-weight: bold;
+  letter-spacing: 4px;
+}
+h2{
+  font-size: 350%;
+}
 section p, article p{
   margin-left: 50px;
 }
@@ -23,23 +36,33 @@ li{
   padding: 0 30px;
 }
 li:hover{
-  background-color: #1a7599;
+  background-color: #66c1e5;
 }
-a:hover{
+li a:hover{
   color: white;
 }
 #icons{
   width: 70px;
   position: relative;
-  padding: 0 10px;
+  padding: 0 5px;
 }
 /* main styles */
-main >img{
-  width: 250px;
+.row{
+  margin-top: 20px;
+}
+#book{
+  max-width: 80%;
+  height: auto;
+  display: block;
+  margin: auto;
+  margin-top: 50px;
 }
 p > strong > i{
   font-size: 28px;
   color: #1a7599;
+}
+.row section, .row form{
+  padding: 0 30px;
 }
 /* form styles */
 form input{
@@ -48,6 +71,13 @@ form input{
 form{
   border: 1px solid #1e85ae;
   text-align: left;
+  border-radius: 5px;
+}
+.row form{
+  padding: 0;
+  margin-bottom: 700px;
+  margin-top: 50px;
+  line-height: 30px;  
 }
 label{
   display: inline-block
@@ -59,6 +89,14 @@ aside{
 /* reviews styles */
 p > img{
   width: 100px;
+}
+article a{
+  text-decoration: none;
+  color: #1e85ae;
+}
+article a:hover{
+  color: #66c1e5;
+  text-decoration: none;
 }
 /* product details */
 strong{

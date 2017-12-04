@@ -47,38 +47,45 @@
 				</nav>
 			</header>
       <main>
-        <!-- cover of book -->
-        <img src="content/book.jpg" alt="Blood Sweat and Pixels">
-        <header><h2>Blood Sweat and Pixels</h2></header>
-        <p>by: Jason Schreier</p>
-        <p><strong><i>$17.99</i></strong></p>
-        <!-- description -->
-        <article id="description">
-          <h3>Product Description</h3>
-          <p>Developing video games—hero's journey or fool's errand? The creative and technical logistics that go into building today's hottest games can be more harrowing and complex than the games themselves, often seeming like an endless maze or a bottomless abyss. In Blood, Sweat, and Pixels, Jason Schreier takes readers on a fascinating odyssey behind the scenes of video game development, where the creator may be a team of 600 overworked underdogs or a solitary geek genius. Exploring the artistic challenges,technical impossibilities, marketplace demands, and Donkey Kong-sized monkey wrenches thrown into the works by corporate, Blood, Sweat, and Pixels reveals how bringing any game to completion is more than Sisyphean—it's nothing short of miraculous.</p>
-          <p>Taking some of the most popular, bestselling recent games, Schreier immerses readers in the hellfire of the development process, whether it's RPG studio Bioware's challenge to beat an impossible schedule and overcome countless technical nightmares to build Dragon Age: Inquisition; indie developer Eric Barone's single-handed efforts to grow country-life RPG Stardew Valley from one man's vision into a multi-million-dollar franchise; or Bungie spinning out from their corporate overlords at Microsoft to create Destiny, a brand new universe that they hoped would become as iconic as Star Wars and Lord of the Rings—even as it nearly ripped their studio apart.</p>
-          <p>Documenting the round-the-clock crunches, buggy-eyed burnout, and last-minute saves, Blood, Sweat, and Pixels is a journey through development hell—and ultimately a tribute to the dedicated diehards and unsung heroes who scale mountains of obstacles in their quests to create the best games imaginable.</p>          
-        </article>
-        <form>
-          <fieldset>
-            <label>Variation:</label>
-            <select>
-              <option>Paperback</option>
-              <option>Hardcover</option>
-            </select><br>
-            <label>First Name:</label>
-            <input type="text"><br>
-            <label>Last Name:</label>
-            <input type="text"><br>
-            <label>Email:</label>
-            <input type="text"><br>
-            <label>Phone Number:</label>
-            <input type="text"><br>
-            <label>Address:</label>
-            <input type="text"><br>
-            <button type="button" name="button" class="btn">Add to Cart</button>
-          </fieldset>
-        </form>
+        <div class="row" id="row1">
+          <!-- cover of book -->
+          <!-- use container so I can shape the img without effecting the layout of the rest of the row -->
+          <section id="imgContainer" class="col-lg-4 col-md-4">
+            <img id="book" src="content/book.jpg" alt="Blood Sweat and Pixels">
+          </section>
+          <section class="col-lg-5 col-md-5">
+            <header><h2>Blood Sweat and Pixels</h2></header>
+            <p>by: Jason Schreier</p>
+            <p><strong><i>$17.99</i></strong></p>
+            <!-- description -->
+            <article id="description">
+              <h3>Product Description</h3>
+              <p>Developing video games—hero's journey or fool's errand? The creative and technical logistics that go into building today's hottest games can be more harrowing and complex than the games themselves, often seeming like an endless maze or a bottomless abyss. In Blood, Sweat, and Pixels, Jason Schreier takes readers on a fascinating odyssey behind the scenes of video game development, where the creator may be a team of 600 overworked underdogs or a solitary geek genius. Exploring the artistic challenges,technical impossibilities, marketplace demands, and Donkey Kong-sized monkey wrenches thrown into the works by corporate, Blood, Sweat, and Pixels reveals how bringing any game to completion is more than Sisyphean—it's nothing short of miraculous.</p>
+              <p>Taking some of the most popular, bestselling recent games, Schreier immerses readers in the hellfire of the development process, whether it's RPG studio Bioware's challenge to beat an impossible schedule and overcome countless technical nightmares to build Dragon Age: Inquisition; indie developer Eric Barone's single-handed efforts to grow country-life RPG Stardew Valley from one man's vision into a multi-million-dollar franchise; or Bungie spinning out from their corporate overlords at Microsoft to create Destiny, a brand new universe that they hoped would become as iconic as Star Wars and Lord of the Rings—even as it nearly ripped their studio apart.</p>
+              <p>Documenting the round-the-clock crunches, buggy-eyed burnout, and last-minute saves, Blood, Sweat, and Pixels is a journey through development hell—and ultimately a tribute to the dedicated diehards and unsung heroes who scale mountains of obstacles in their quests to create the best games imaginable.</p>          
+            </article>    
+          </section>
+          <form class="col-lg-3 col-md-3">
+            <fieldset>
+              <label>Variation:</label>
+              <select>
+                <option>Paperback</option>
+                <option>Hardcover</option>
+              </select><br>
+              <label>First Name:</label>
+              <input type="text"><br>
+              <label>Last Name:</label>
+              <input type="text"><br>
+              <label>Email:</label>
+              <input type="text"><br>
+              <label>Phone Number:</label>
+              <input type="text"><br>
+              <label>Address:</label>
+              <input type="text"><br>
+              <button type="button" name="button" class="btn">Add to Cart</button>
+            </fieldset>
+          </form>
+        </div>
       </main>
       <aside id="carousel">
         <!-- carousel not currently working -->
@@ -110,7 +117,7 @@
       <div id="accordion" role="tablist">
         <section class="card">
           <header class="card-header" role="tab" id="backCover">
-            <h3 class="mb-0" data-toggle="collapse" data-target="#collapseBackCover">Back Cover Excerpt</h2>
+            <h3 class="mb-0" data-toggle="collapse" data-target="#collapseBackCover">Back Cover Excerpt</h3>
           </header>
           <div class="collapse show" role="tabpanel" id="collapseBackCover" data-parent="#accordion" aria-expanded="true" aria-controls="collapseBackCover">
             <article class="card-body">
@@ -146,7 +153,7 @@
                   </a>
                   <div id="tabPanelReviews1" class="collapse show" role="tabpanel">
                     <p><strong>Clint Hoffman</strong></p>
-                    <p><img src="content/Review-Stars.png" alt="rating">Found the book to be very informative. It was a great read and gave me more insight into the amount of work coders put into games.</p>
+                    <p><img src="content/Review-Stars.png" alt="rating"> <br> Found the book to be very informative. It was a great read and gave me more insight into the amount of work coders put into games.</p>
                   </div>
                 </article><!-- end item -->
                 <article class="item">
@@ -155,7 +162,7 @@
                   </a>
                   <div id="tabPanelReviews2" class="collapse" role="tabpanel">
                     <p><strong>James N</strong></p> 
-                    <p><img src="content/Review-Stars.png" alt="rating">Very good and interesting read to the way the games you love were made. Makes you appreciate it the time and effort devs put into it.</p>
+                    <p><img src="content/Review-Stars.png" alt="rating"> <br> Very good and interesting read to the way the games you love were made. Makes you appreciate it the time and effort devs put into it.</p>
                   </div>
                 </article><!-- end item -->
               </section><!-- end items section -->
