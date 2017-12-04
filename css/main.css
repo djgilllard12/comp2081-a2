@@ -1,0 +1,72 @@
+@charset "UTF-8";
+/* CUSTOM STYLES GO HERE */
+/* universal styles */
+section p, article p{
+  margin-left: 50px;
+}
+footer, .card-header, button,header h2, #reccomended{
+  background-color: #1a7599;
+  color: white;
+  padding: .75rem 1.25rem;
+  border-radius: 5px;
+}
+/* nav styles */
+nav{
+  background-color: #1a7599;
+  color: white;
+}
+.nav-link{
+  text-decoration: none;
+  color: white;
+}
+li{
+  padding: 0 30px;
+}
+li:hover{
+  background-color: #1a7599;
+}
+a:hover{
+  color: white;
+}
+#icons{
+  width: 70px;
+  position: relative;
+  padding: 0 10px;
+}
+/* main styles */
+main >img{
+  width: 250px;
+}
+p > strong > i{
+  font-size: 28px;
+  color: #1a7599;
+}
+/* form styles */
+form input{
+  border-radius: 5px;
+}
+form{
+  border: 1px solid #1e85ae;
+  text-align: left;
+}
+label{
+  display: inline-block
+}
+/* carousel styles */
+aside{
+  padding: 150px 0;
+}
+/* reviews styles */
+p > img{
+  width: 100px;
+}
+/* product details */
+strong{
+  text-transform: capitalize;
+}
+/* footer */
+footer{
+  color: white;
+  padding: 5px;
+  text-align: center;
+}
